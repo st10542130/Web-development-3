@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en-ZA">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' https://unpkg.com; style-src 'self' 'unsafe-inline' https://unpkg.com; img-src 'self' data: https://tile.openstreetmap.org https://unpkg.com; connect-src 'self' https://formspree.io; form-action 'self' https://formspree.io; base-uri 'self'; object-src 'none'">
+    <meta name="referrer" content="strict-origin-when-cross-origin">
+    <title>Contact Us | Donate, Volunteer or Partner with FoodForward SA</title>
+    <meta name="description" content="Contact FoodForward SA to donate funds or food, volunteer, or become a corporate partner. Send us a message and find our service areas on the map.">
+    <meta name="keywords" content="contact FoodForward SA, donate food, volunteer, corporate partner, foodbank Johannesburg Cape Town Durban">
+    <meta name="author" content="FoodForward SA">
+    <meta name="theme-color" content="#1b4d3e">
+    <link rel="canonical" href="https://yourusername.github.io/foodforward-sa/contact.html">
+    <link rel="icon" href="favicon.svg" type="image/svg+xml">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="FoodForward SA">
+    <meta property="og:title" content="Contact Us | Donate, Volunteer or Partner with FoodForward SA">
+    <meta property="og:description" content="Contact FoodForward SA to donate funds or food, volunteer, or become a corporate partner. Send us a message and find our service areas on the map.">
+    <meta property="og:url" content="https://yourusername.github.io/foodforward-sa/contact.html">
+    <meta property="og:image" content="https://yourusername.github.io/foodforward-sa/gallery/food-distribution.webp">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Contact Us | Donate, Volunteer or Partner with FoodForward SA">
+    <meta name="twitter:description" content="Contact FoodForward SA to donate funds or food, volunteer, or become a corporate partner. Send us a message and find our service areas on the map.">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="">
+    <script type="application/ld+json">{"@context": "https://schema.org", "@type": "NonprofitOrganization", "name": "FoodForward SA", "url": "https://yourusername.github.io/foodforward-sa/", "description": "Foodbank organisation recovering surplus food and helping reduce hunger in South Africa.", "areaServed": {"@type": "Country", "name": "South Africa"}, "logo": "https://yourusername.github.io/foodforward-sa/favicon.svg"}</script>
+</head>
+<body>
+    <a class="skip-link" href="#main">Skip to main content</a>
+    <header>
+        <div class="header-container">
+            <p class="site-title"><a href="index.html">FoodForward SA</a></p>
+            <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-list">Menu</button>
+            <nav aria-label="Main navigation">
+                <ul id="nav-list"><li><a href="index.html">Home</a></li><li><a href="about.html">About Us</a></li><li><a href="services.html">Products and Services</a></li><li><a href="gallery.html">Gallery</a></li><li><a href="enquiry.html">Enquiry</a></li><li><a href="contact.html">Contact Us</a></li></ul>
+            </nav>
+        </div>
+    </header>
+
+    <main id="main">
+
+        <h1 class="page-title">Contact Us</h1>
+        <p class="lead">If you would like to support FoodForward SA, volunteer, donate food or become a partner, please contact us.</p>
+
+        <div class="form-layout">
+            <div class="panel">
+                <h2 style="font-size:1.4rem;">Send Us a Message</h2>
+                <form data-form="contact" action="https://formspree.io/f/YOUR_FORM_ID" method="post" novalidate>
+                    <div class="form-group">
+                        <label for="name">Full Name:</label>
+                        <input type="text" id="name" name="name" data-rule="name" required minlength="2" maxlength="60" autocomplete="name" placeholder="John Doe" aria-describedby="name-error">
+                        <p class="field-error" id="name-error" role="alert"></p>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email Address:</label>
+                        <input type="email" id="email" name="email" data-rule="email" required maxlength="254" autocomplete="email" placeholder="john@example.com" aria-describedby="email-error">
+                        <p class="field-error" id="email-error" role="alert"></p>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Phone Number (optional):</label>
+                        <input type="tel" id="phone" name="phone" data-rule="phoneOptional" autocomplete="tel" placeholder="012 345 6789" aria-describedby="phone-error">
+                        <p class="field-error" id="phone-error" role="alert"></p>
+                    </div>
+                    <fieldset class="form-group" data-radio-group>
+                        <legend>Reason for Contact:</legend>
+                        <div class="checkbox-group">
+                            <div class="checkbox-item"><input type="radio" name="reason" id="r1" value="Donate Funds"> <label for="r1">Donate Funds</label></div>
+                            <div class="checkbox-item"><input type="radio" name="reason" id="r2" value="Donate Food"> <label for="r2">Donate Food</label></div>
+                            <div class="checkbox-item"><input type="radio" name="reason" id="r3" value="Volunteer"> <label for="r3">Volunteer</label></div>
+                            <div class="checkbox-item"><input type="radio" name="reason" id="r4" value="Corporate Partnership"> <label for="r4">Corporate Partnership</label></div>
+                            <div class="checkbox-item"><input type="radio" name="reason" id="r5" value="General Enquiry"> <label for="r5">General Enquiry</label></div>
+                        </div>
+                        <p class="field-error" id="reason-error" role="alert"></p>
+                    </fieldset>
+                    <div class="form-group">
+                        <label for="message">Message:</label>
+                        <textarea id="message" name="message" data-rule="message" required minlength="10" maxlength="1000" rows="5" data-counter="message-count" placeholder="Type your message here..." aria-describedby="message-error message-count"></textarea>
+                        <p class="char-count" id="message-count"></p>
+                        <p class="field-error" id="message-error" role="alert"></p>
+                    </div>
+                    <div class="honeypot" aria-hidden="true"><label>Leave blank <input type="text" name="website" tabindex="-1" autocomplete="off"></label></div>
+                    <button type="submit" class="btn">Send Message</button>
+                    <div id="form-status" class="form-status" role="status" aria-live="polite"></div>
+                </form>
+            </div>
+
+            <aside class="card highlight-card">
+                <h3>Get Involved</h3>
+                <ul class="bullet-list" style="list-style-type:circle;margin-top:15px;">
+                    <li>Donate Funds</li>
+                    <li>Donate Food</li>
+                    <li>Volunteer</li>
+                    <li>Become a Corporate Partner</li>
+                    <li>Support FoodForward SA Programmes</li>
+                </ul>
+                <p class="legal-note">Need costs or availability first? Try our <a href="enquiry.html">service enquiry form</a>.</p>
+            </aside>
+        </div>
+
+        <section class="section" aria-labelledby="map-heading">
+            <h2 id="map-heading">Where We Work</h2>
+            <div id="map" role="region" aria-label="Map of South Africa showing example FoodForward SA service areas"></div>
+            <p class="map-note">Example service areas shown at city centres. Select a marker for details.</p>
+            <button type="button" id="nearest-btn" class="btn btn-secondary">Find my nearest area</button>
+            <p id="nearest-result" class="result-count" role="status" aria-live="polite"></p>
+        </section>
+    </main>
+
+    <footer>
+        <p>Share: 
+            <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fyourusername.github.io%2Ffoodforward-sa%2Fcontact.html" target="_blank" rel="noopener noreferrer">Facebook</a> |
+            <a href="https://twitter.com/intent/tweet?url=https%3A%2F%2Fyourusername.github.io%2Ffoodforward-sa%2Fcontact.html&amp;text=Help%20fight%20hunger%20with%20FoodForward%20SA" target="_blank" rel="noopener noreferrer">X</a> |
+            <a href="https://www.linkedin.com/sharing/share-offsite/?url=https%3A%2F%2Fyourusername.github.io%2Ffoodforward-sa%2Fcontact.html" target="_blank" rel="noopener noreferrer">LinkedIn</a> |
+            <a href="https://wa.me/?text=https%3A%2F%2Fyourusername.github.io%2Ffoodforward-sa%2Fcontact.html" target="_blank" rel="noopener noreferrer">WhatsApp</a>
+        </p>
+        <p>Learn more at the <a href="https://foodforwardsa.org" target="_blank" rel="noopener noreferrer">official FoodForward SA website</a>.</p>
+        <p>&copy; 2026 FoodForward SA. All rights reserved.</p>
+    </footer>
+
+    <script src="js/main.js" defer></script>
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+    <script src="js/forms.js" defer></script>
+    <script src="js/map.js" defer></script>
+</body>
+</html>

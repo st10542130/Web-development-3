@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en-ZA">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' https://unpkg.com; style-src 'self' 'unsafe-inline' https://unpkg.com; img-src 'self' data: https://tile.openstreetmap.org https://unpkg.com; connect-src 'self' https://formspree.io; form-action 'self' https://formspree.io; base-uri 'self'; object-src 'none'">
+    <meta name="referrer" content="strict-origin-when-cross-origin">
+    <title>Service Enquiry | Costs and Availability | FoodForward SA</title>
+    <meta name="description" content="Enquire about FoodForward SA services. Get an instant estimate of cost and availability for sponsoring food parcels, volunteering or corporate partnerships.">
+    <meta name="keywords" content="enquiry, sponsor food parcels, donate meals, corporate partnership cost, volunteer group, FoodForward SA">
+    <meta name="author" content="FoodForward SA">
+    <meta name="theme-color" content="#1b4d3e">
+    <link rel="canonical" href="https://yourusername.github.io/foodforward-sa/enquiry.html">
+    <link rel="icon" href="favicon.svg" type="image/svg+xml">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="FoodForward SA">
+    <meta property="og:title" content="Service Enquiry | Costs and Availability | FoodForward SA">
+    <meta property="og:description" content="Enquire about FoodForward SA services. Get an instant estimate of cost and availability for sponsoring food parcels, volunteering or corporate partnerships.">
+    <meta property="og:url" content="https://yourusername.github.io/foodforward-sa/enquiry.html">
+    <meta property="og:image" content="https://yourusername.github.io/foodforward-sa/gallery/food-distribution.webp">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Service Enquiry | Costs and Availability | FoodForward SA">
+    <meta name="twitter:description" content="Enquire about FoodForward SA services. Get an instant estimate of cost and availability for sponsoring food parcels, volunteering or corporate partnerships.">
+    <link rel="stylesheet" href="style.css">
+    
+    <script type="application/ld+json">{"@context": "https://schema.org", "@type": "NonprofitOrganization", "name": "FoodForward SA", "url": "https://yourusername.github.io/foodforward-sa/", "description": "Foodbank organisation recovering surplus food and helping reduce hunger in South Africa.", "areaServed": {"@type": "Country", "name": "South Africa"}, "logo": "https://yourusername.github.io/foodforward-sa/favicon.svg"}</script>
+</head>
+<body>
+    <a class="skip-link" href="#main">Skip to main content</a>
+    <header>
+        <div class="header-container">
+            <p class="site-title"><a href="index.html">FoodForward SA</a></p>
+            <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-list">Menu</button>
+            <nav aria-label="Main navigation">
+                <ul id="nav-list"><li><a href="index.html">Home</a></li><li><a href="about.html">About Us</a></li><li><a href="services.html">Products and Services</a></li><li><a href="gallery.html">Gallery</a></li><li><a href="enquiry.html">Enquiry</a></li><li><a href="contact.html">Contact Us</a></li></ul>
+            </nav>
+        </div>
+    </header>
+
+    <main id="main">
+
+        <h1 class="page-title">Service Enquiry</h1>
+        <p class="lead">Want to know the cost or availability of one of our services? Fill in the form and receive an instant estimate.</p>
+
+        <div class="form-layout">
+            <div class="panel">
+                <h2 style="font-size:1.4rem;">Enquire About a Service</h2>
+                <form data-form="enquiry" action="https://formspree.io/f/YOUR_FORM_ID" method="post" novalidate>
+                    <div class="form-group">
+                        <label for="name">Full Name:</label>
+                        <input type="text" id="name" name="name" data-rule="name" required minlength="2" maxlength="60" autocomplete="name" placeholder="John Doe" aria-describedby="name-error">
+                        <p class="field-error" id="name-error" role="alert"></p>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email Address:</label>
+                        <input type="email" id="email" name="email" data-rule="email" required maxlength="254" autocomplete="email" placeholder="john@example.com" aria-describedby="email-error">
+                        <p class="field-error" id="email-error" role="alert"></p>
+                    </div>
+                    <div class="form-group">
+                        <label for="phone">Phone Number:</label>
+                        <input type="tel" id="phone" name="phone" data-rule="phoneRequired" required autocomplete="tel" placeholder="012 345 6789" aria-describedby="phone-error">
+                        <p class="field-error" id="phone-error" role="alert"></p>
+                    </div>
+                    <div class="form-group">
+                        <label for="service">Service of Interest:</label>
+                        <select id="service" name="service" data-rule="select" required aria-describedby="service-error">
+                            <option value="">Choose a service...</option>
+                        </select>
+                        <p class="field-error" id="service-error" role="alert"></p>
+                    </div>
+                    <div class="form-group">
+                        <label for="quantity" id="quantity-label">Quantity:</label>
+                        <input type="number" id="quantity" name="quantity" data-rule="quantity" required min="1" max="10000" step="1" inputmode="numeric" placeholder="e.g. 10" aria-describedby="quantity-error live-estimate">
+                        <p class="field-error" id="quantity-error" role="alert"></p>
+                        <p id="live-estimate" class="result-count" aria-live="polite"></p>
+                    </div>
+                    <div class="form-group">
+                        <label for="date">Preferred Date:</label>
+                        <input type="date" id="date" name="date" data-rule="date" required aria-describedby="date-error">
+                        <p class="field-error" id="date-error" role="alert"></p>
+                    </div>
+                    <div class="form-group">
+                        <label for="notes">Additional Notes (optional):</label>
+                        <textarea id="notes" name="notes" data-rule="notes" rows="4" maxlength="500" data-counter="notes-count" placeholder="Tell us anything else we should know..." aria-describedby="notes-error notes-count"></textarea>
+                        <p class="char-count" id="notes-count"></p>
+                        <p class="field-error" id="notes-error" role="alert"></p>
+                    </div>
+                    <div class="honeypot" aria-hidden="true"><label>Leave blank <input type="text" name="website" tabindex="-1" autocomplete="off"></label></div>
+                    <button type="submit" class="btn">Get My Response</button>
+                    <div id="form-status" class="form-status" role="status" aria-live="polite"></div>
+                </form>
+            </div>
+
+            <aside class="card highlight-card">
+                <h3>How it works</h3>
+                <ol class="bullet-list">
+                    <li>Choose the service you are interested in.</li>
+                    <li>Enter the quantity and your preferred date.</li>
+                    <li>Receive an estimated cost and availability straight away.</li>
+                </ol>
+                <p class="legal-note">Costs shown are estimates for demonstration. Prefer to send a general message? <a href="contact.html">Contact us</a>.</p>
+            </aside>
+        </div>
+    </main>
+
+    <footer>
+        <p>Share: 
+            <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fyourusername.github.io%2Ffoodforward-sa%2Fenquiry.html" target="_blank" rel="noopener noreferrer">Facebook</a> |
+            <a href="https://twitter.com/intent/tweet?url=https%3A%2F%2Fyourusername.github.io%2Ffoodforward-sa%2Fenquiry.html&amp;text=Help%20fight%20hunger%20with%20FoodForward%20SA" target="_blank" rel="noopener noreferrer">X</a> |
+            <a href="https://www.linkedin.com/sharing/share-offsite/?url=https%3A%2F%2Fyourusername.github.io%2Ffoodforward-sa%2Fenquiry.html" target="_blank" rel="noopener noreferrer">LinkedIn</a> |
+            <a href="https://wa.me/?text=https%3A%2F%2Fyourusername.github.io%2Ffoodforward-sa%2Fenquiry.html" target="_blank" rel="noopener noreferrer">WhatsApp</a>
+        </p>
+        <p>Learn more at the <a href="https://foodforwardsa.org" target="_blank" rel="noopener noreferrer">official FoodForward SA website</a>.</p>
+        <p>&copy; 2026 FoodForward SA. All rights reserved.</p>
+    </footer>
+
+    <script src="js/main.js" defer></script>
+    <script src="js/data.js" defer></script>
+    <script src="js/forms.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en-ZA">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' https://unpkg.com; style-src 'self' 'unsafe-inline' https://unpkg.com; img-src 'self' data: https://tile.openstreetmap.org https://unpkg.com; connect-src 'self' https://formspree.io; form-action 'self' https://formspree.io; base-uri 'self'; object-src 'none'">
+    <meta name="referrer" content="strict-origin-when-cross-origin">
+    <title>Products and Services | Foodbanking, Nutrition and Food Gardens</title>
+    <meta name="description" content="Explore FoodForward SA programmes: warehouse and virtual foodbanking, mother and child nutrition, food gardens, volunteering and corporate partnerships.">
+    <meta name="keywords" content="warehouse foodbanking, virtual foodbanking, mother and child nutrition, food gardens, corporate partnerships, volunteer">
+    <meta name="author" content="FoodForward SA">
+    <meta name="theme-color" content="#1b4d3e">
+    <link rel="canonical" href="https://yourusername.github.io/foodforward-sa/services.html">
+    <link rel="icon" href="favicon.svg" type="image/svg+xml">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="FoodForward SA">
+    <meta property="og:title" content="Products and Services | Foodbanking, Nutrition and Food Gardens">
+    <meta property="og:description" content="Explore FoodForward SA programmes: warehouse and virtual foodbanking, mother and child nutrition, food gardens, volunteering and corporate partnerships.">
+    <meta property="og:url" content="https://yourusername.github.io/foodforward-sa/services.html">
+    <meta property="og:image" content="https://yourusername.github.io/foodforward-sa/gallery/food-distribution.webp">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Products and Services | Foodbanking, Nutrition and Food Gardens">
+    <meta name="twitter:description" content="Explore FoodForward SA programmes: warehouse and virtual foodbanking, mother and child nutrition, food gardens, volunteering and corporate partnerships.">
+    <link rel="stylesheet" href="style.css">
+    
+    <script type="application/ld+json">{"@context": "https://schema.org", "@type": "NonprofitOrganization", "name": "FoodForward SA", "url": "https://yourusername.github.io/foodforward-sa/", "description": "Foodbank organisation recovering surplus food and helping reduce hunger in South Africa.", "areaServed": {"@type": "Country", "name": "South Africa"}, "logo": "https://yourusername.github.io/foodforward-sa/favicon.svg"}</script>
+</head>
+<body>
+    <a class="skip-link" href="#main">Skip to main content</a>
+    <header>
+        <div class="header-container">
+            <p class="site-title"><a href="index.html">FoodForward SA</a></p>
+            <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-list">Menu</button>
+            <nav aria-label="Main navigation">
+                <ul id="nav-list"><li><a href="index.html">Home</a></li><li><a href="about.html">About Us</a></li><li><a href="services.html">Products and Services</a></li><li><a href="gallery.html">Gallery</a></li><li><a href="enquiry.html">Enquiry</a></li><li><a href="contact.html">Contact Us</a></li></ul>
+            </nav>
+        </div>
+    </header>
+
+    <main id="main">
+
+        <h1 class="page-title">Products and Services</h1>
+        <p class="lead">FoodForward SA provides programmes and opportunities that help reduce hunger and make quality food available to people who need it.</p>
+
+        <form class="toolbar" role="search" aria-label="Search and filter services">
+            <div class="form-group">
+                <label for="service-search">Search services</label>
+                <input type="search" id="service-search" placeholder="e.g. garden, volunteer, nutrition" autocomplete="off" maxlength="60">
+            </div>
+            <div class="form-group">
+                <label for="service-category">Category</label>
+                <select id="service-category"><option value="">All categories</option></select>
+            </div>
+            <div class="form-group">
+                <label for="service-sort">Sort by</label>
+                <select id="service-sort">
+                    <option value="az">Name (A to Z)</option>
+                    <option value="za">Name (Z to A)</option>
+                    <option value="category">Category</option>
+                </select>
+            </div>
+        </form>
+        <button type="button" id="service-reset" class="btn btn-secondary" style="margin-top:5px;">Clear filters</button>
+        <p class="result-count" id="result-count" role="status" aria-live="polite"></p>
+
+        <div class="card-grid" id="service-grid"></div>
+        <noscript>
+            <div class="card-grid">
+                <div class="card"><h3>Warehouse Foodbanking</h3><p>Quality surplus food is recovered from the consumer goods supply chain and distributed through the FoodForward SA network.</p></div>
+                <div class="card"><h3>Virtual Foodbanking</h3><p>Virtual Foodbanking connects available food with organisations that need food support.</p></div>
+                <div class="card"><h3>Mother &amp; Child Nutrition</h3><p>This programme focuses on supporting nutrition for mothers and children in vulnerable communities.</p></div>
+                <div class="card"><h3>Food Gardens Connect</h3><p>Food Gardens Connect supports community food gardens and helps communities improve access to food.</p></div>
+                <div class="card"><h3>Volunteer and Events</h3><p>Volunteers can participate in events and activities that support FoodForward SA's work and help communities.</p></div>
+                <div class="card"><h3>Corporate Partnerships</h3><p>Businesses and organisations can partner with FoodForward SA to support food donations and increase their social impact.</p></div>
+            </div>
+        </noscript>
+
+        <section class="section panel center reveal">
+            <h2 style="display:inline-block;">How You Can Help</h2>
+            <p style="margin:10px 0;">Donate funds &bull; Donate food &bull; Volunteer &bull; Become a partner &bull; Support FoodForward SA programmes</p>
+            <a href="enquiry.html" class="btn">Make an Enquiry</a>
+            <a href="contact.html" class="btn btn-secondary">Contact Us to Get Involved</a>
+        </section>
+    </main>
+
+    <footer>
+        <p>Share: 
+            <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fyourusername.github.io%2Ffoodforward-sa%2Fservices.html" target="_blank" rel="noopener noreferrer">Facebook</a> |
+            <a href="https://twitter.com/intent/tweet?url=https%3A%2F%2Fyourusername.github.io%2Ffoodforward-sa%2Fservices.html&amp;text=Help%20fight%20hunger%20with%20FoodForward%20SA" target="_blank" rel="noopener noreferrer">X</a> |
+            <a href="https://www.linkedin.com/sharing/share-offsite/?url=https%3A%2F%2Fyourusername.github.io%2Ffoodforward-sa%2Fservices.html" target="_blank" rel="noopener noreferrer">LinkedIn</a> |
+            <a href="https://wa.me/?text=https%3A%2F%2Fyourusername.github.io%2Ffoodforward-sa%2Fservices.html" target="_blank" rel="noopener noreferrer">WhatsApp</a>
+        </p>
+        <p>Learn more at the <a href="https://foodforwardsa.org" target="_blank" rel="noopener noreferrer">official FoodForward SA website</a>.</p>
+        <p>&copy; 2026 FoodForward SA. All rights reserved.</p>
+    </footer>
+
+    <script src="js/main.js" defer></script>
+    <script src="js/data.js" defer></script>
+    <script src="js/services.js" defer></script>
+</body>
+</html>

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en-ZA">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' https://unpkg.com; style-src 'self' 'unsafe-inline' https://unpkg.com; img-src 'self' data: https://tile.openstreetmap.org https://unpkg.com; connect-src 'self' https://formspree.io; form-action 'self' https://formspree.io; base-uri 'self'; object-src 'none'">
+    <meta name="referrer" content="strict-origin-when-cross-origin">
+    <title>Gallery | Food Recovery, Volunteers and Food Gardens</title>
+    <meta name="description" content="Browse the FoodForward SA gallery: food recovery, volunteers, the foodbank warehouse, food gardens, food distribution and community support.">
+    <meta name="keywords" content="foodbank gallery, food recovery, volunteers, food gardens, food distribution, community support">
+    <meta name="author" content="FoodForward SA">
+    <meta name="theme-color" content="#1b4d3e">
+    <link rel="canonical" href="https://yourusername.github.io/foodforward-sa/gallery.html">
+    <link rel="icon" href="favicon.svg" type="image/svg+xml">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="FoodForward SA">
+    <meta property="og:title" content="Gallery | Food Recovery, Volunteers and Food Gardens">
+    <meta property="og:description" content="Browse the FoodForward SA gallery: food recovery, volunteers, the foodbank warehouse, food gardens, food distribution and community support.">
+    <meta property="og:url" content="https://yourusername.github.io/foodforward-sa/gallery.html">
+    <meta property="og:image" content="https://yourusername.github.io/foodforward-sa/gallery/food-distribution.webp">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Gallery | Food Recovery, Volunteers and Food Gardens">
+    <meta name="twitter:description" content="Browse the FoodForward SA gallery: food recovery, volunteers, the foodbank warehouse, food gardens, food distribution and community support.">
+    <link rel="stylesheet" href="style.css">
+    
+    <script type="application/ld+json">{"@context": "https://schema.org", "@type": "NonprofitOrganization", "name": "FoodForward SA", "url": "https://yourusername.github.io/foodforward-sa/", "description": "Foodbank organisation recovering surplus food and helping reduce hunger in South Africa.", "areaServed": {"@type": "Country", "name": "South Africa"}, "logo": "https://yourusername.github.io/foodforward-sa/favicon.svg"}</script>
+</head>
+<body>
+    <a class="skip-link" href="#main">Skip to main content</a>
+    <header>
+        <div class="header-container">
+            <p class="site-title"><a href="index.html">FoodForward SA</a></p>
+            <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="nav-list">Menu</button>
+            <nav aria-label="Main navigation">
+                <ul id="nav-list"><li><a href="index.html">Home</a></li><li><a href="about.html">About Us</a></li><li><a href="services.html">Products and Services</a></li><li><a href="gallery.html">Gallery</a></li><li><a href="enquiry.html">Enquiry</a></li><li><a href="contact.html">Contact Us</a></li></ul>
+            </nav>
+        </div>
+    </header>
+
+    <main id="main">
+
+        <h1 class="page-title">Gallery</h1>
+        <p class="lead">See food recovery, volunteers, gardens and community support in action. Select a photo to enlarge it.</p>
+
+        <div class="filter-bar" role="group" aria-label="Filter photos by category">
+            <button type="button" class="filter-btn" data-filter="all" aria-pressed="true">All</button>
+            <button type="button" class="filter-btn" data-filter="Food Security" aria-pressed="false">Food Security</button>
+            <button type="button" class="filter-btn" data-filter="Community" aria-pressed="false">Community</button>
+        </div>
+        <p id="gallery-status" class="result-count" role="status" aria-live="polite">Showing 6 of 6 photos</p>
+
+        <div class="gallery-grid">
+            <figure class="gallery-item reveal" data-category="Food Security">
+                <button type="button" aria-label="Enlarge photo: Food Recovery"><img src="gallery/food-recovery.webp" alt="Food recovery hierarchy diagram showing the best uses of surplus food, from source reduction to feeding hungry people" width="227" height="200" loading="lazy"></button>
+                <figcaption><h3>Food Recovery</h3><p>Surplus food is recovered and put to its best use: feeding people first.</p></figcaption>
+            </figure>
+            <figure class="gallery-item reveal" data-category="Community">
+                <button type="button" aria-label="Enlarge photo: Volunteers"><img src="gallery/volunteers.webp" alt="Row of raised hands with the words Volunteer, you can make a difference" width="341" height="175" loading="lazy"></button>
+                <figcaption><h3>Volunteers</h3><p>Volunteers are at the heart of FoodForward SA. You can make a difference.</p></figcaption>
+            </figure>
+            <figure class="gallery-item reveal" data-category="Food Security">
+                <button type="button" aria-label="Enlarge photo: Foodbank Warehouse"><img src="gallery/foodbank-warehouse.webp" alt="Foodbank warehouse stacked with crates of fresh tomatoes and other produce" width="277" height="185" loading="lazy"></button>
+                <figcaption><h3>Foodbank Warehouse</h3><p>Our warehouse foodbanking stores recovered food before it is distributed.</p></figcaption>
+            </figure>
+            <figure class="gallery-item reveal" data-category="Community">
+                <button type="button" aria-label="Enlarge photo: Community Support"><img src="gallery/community-support.webp" alt="Illustration of a circle of people sitting together with the words Community Support" width="238" height="180" loading="lazy"></button>
+                <figcaption><h3>Community Support</h3><p>Community support brings people together to build a stronger community.</p></figcaption>
+            </figure>
+            <figure class="gallery-item reveal" data-category="Community">
+                <button type="button" aria-label="Enlarge photo: Food Gardens"><img src="gallery/food-gardens.webp" alt="Rows of lettuce, cabbage and other vegetables growing in a community food garden" width="235" height="180" loading="lazy"></button>
+                <figcaption><h3>Food Gardens</h3><p>Food gardens help communities grow fresh food close to home.</p></figcaption>
+            </figure>
+            <figure class="gallery-item reveal" data-category="Food Security">
+                <button type="button" aria-label="Enlarge photo: Food Distribution"><img src="gallery/food-distribution.webp" alt="Volunteers handing out boxes of fruit and vegetables at a food distribution" width="261" height="180" loading="lazy"></button>
+                <figcaption><h3>Food Distribution</h3><p>Food is distributed through our network to people and organisations in need.</p></figcaption>
+            </figure>
+        </div>
+        <p class="legal-note">The food recovery image is the U.S. EPA Food Recovery Hierarchy diagram, used for educational purposes. See references in the README.</p>
+    </main>
+
+    <footer>
+        <p>Share: 
+            <a href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fyourusername.github.io%2Ffoodforward-sa%2Fgallery.html" target="_blank" rel="noopener noreferrer">Facebook</a> |
+            <a href="https://twitter.com/intent/tweet?url=https%3A%2F%2Fyourusername.github.io%2Ffoodforward-sa%2Fgallery.html&amp;text=Help%20fight%20hunger%20with%20FoodForward%20SA" target="_blank" rel="noopener noreferrer">X</a> |
+            <a href="https://www.linkedin.com/sharing/share-offsite/?url=https%3A%2F%2Fyourusername.github.io%2Ffoodforward-sa%2Fgallery.html" target="_blank" rel="noopener noreferrer">LinkedIn</a> |
+            <a href="https://wa.me/?text=https%3A%2F%2Fyourusername.github.io%2Ffoodforward-sa%2Fgallery.html" target="_blank" rel="noopener noreferrer">WhatsApp</a>
+        </p>
+        <p>Learn more at the <a href="https://foodforwardsa.org" target="_blank" rel="noopener noreferrer">official FoodForward SA website</a>.</p>
+        <p>&copy; 2026 FoodForward SA. All rights reserved.</p>
+    </footer>
+
+    <script src="js/main.js" defer></script>
+    <script src="js/gallery.js" defer></script>
+</body>
+</html>
